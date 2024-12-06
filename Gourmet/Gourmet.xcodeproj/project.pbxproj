@@ -41,6 +41,7 @@
 				"API/GenerativeAI-Info.plist",
 				Model/UserModel.swift,
 				View/EditUserView.swift,
+				View/GourmetTests/GourmetTests.swift,
 				View/HomeView.swift,
 				View/ImageAnalyze.swift,
 				View/OTPVerificationView.swift,
@@ -73,21 +74,24 @@
 			);
 			target = BB06DBF62CE0C1FB00EBB12B /* GourmetUITests */;
 		};
+		BB1A00BD2D02FD6000B88186 /* Exceptions for "Gourmet" folder in "Gourmet" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				View/GourmetTests/GourmetTests.swift,
+			);
+			target = BB06DBDC2CE0C1FA00EBB12B /* Gourmet */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BB06DBDF2CE0C1FA00EBB12B /* Gourmet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				BB1A00BD2D02FD6000B88186 /* Exceptions for "Gourmet" folder in "Gourmet" target */,
 				BB06DC0F2CE0C2E900EBB12B /* Exceptions for "Gourmet" folder in "GourmetTests" target */,
 				BB06DC102CE0C2E900EBB12B /* Exceptions for "Gourmet" folder in "GourmetUITests" target */,
 			);
 			path = Gourmet;
-			sourceTree = "<group>";
-		};
-		BB06DBF02CE0C1FB00EBB12B /* GourmetTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GourmetTests;
 			sourceTree = "<group>";
 		};
 		BB06DBFA2CE0C1FB00EBB12B /* GourmetUITests */ = {
@@ -128,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				BB06DBDF2CE0C1FA00EBB12B /* Gourmet */,
-				BB06DBF02CE0C1FB00EBB12B /* GourmetTests */,
 				BB06DBFA2CE0C1FB00EBB12B /* GourmetUITests */,
 				BB06DBDE2CE0C1FA00EBB12B /* Products */,
 			);
@@ -183,9 +186,6 @@
 			);
 			dependencies = (
 				BB06DBEF2CE0C1FB00EBB12B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				BB06DBF02CE0C1FB00EBB12B /* GourmetTests */,
 			);
 			name = GourmetTests;
 			packageProductDependencies = (
